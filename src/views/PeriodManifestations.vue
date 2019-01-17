@@ -1,27 +1,24 @@
 <template>
-<v-container>
-<div class="text-center" id="svgbody">
-    <v-menu offset-y>
-      <v-btn
-        slot="activator"
-        color="primary"
-        dark
-      >
-        Choisir l'année
-      </v-btn>
-      <v-list>
-        <v-list-tile
-          v-for="(item, index) in items"
-          :key="index"
-          @click="show(item.title)"
-        >
-          <v-list-tile-title>{{ item.title }}</v-list-tile-title>
-        </v-list-tile>
-      </v-list>
-    </v-menu>
-    
-    <svg></svg>
-  </div>
+  <v-container grid-list-md>
+    <v-layout row wrap>
+      <v-flex xs12>
+          <div class="text-center" id="svgbody">
+            <v-menu offset-y>
+              <v-btn slot="activator" color="primary" dark>
+                Choisir l'année
+              </v-btn>
+              <v-list>
+                <v-list-tile v-for="(item, index) in items" :key="index" @click="show(item.title)">
+                  <v-list-tile-title>{{ item.title }}</v-list-tile-title>
+                </v-list-tile>
+              </v-list>
+            </v-menu>
+
+            <svg></svg>
+          </div>
+      </v-flex>
+    </v-layout>
+
 </v-container>
 </template>
 
@@ -305,8 +302,7 @@ body {
 
  #svgbody {
    height: 800px;
-   width: 54%;
-   margin-left: 23%;
+   width: 100%;
  }
 
 div#layout {

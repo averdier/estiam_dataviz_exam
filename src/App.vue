@@ -23,6 +23,17 @@
       </div>
       <!--./Description-->
 
+      <!--Graphiques-->
+      <v-subheader>Graphiques</v-subheader>
+      <v-list class="pa-0">
+        <v-list-tile v-for="graph in graphs" :key="graph.name" :to="graph.link">
+          <v-list-tile-content>
+            <v-list-tile-title>{{ graph.name }}</v-list-tile-title>
+          </v-list-tile-content>
+        </v-list-tile>
+      </v-list>
+      <!--./Graphiques-->
+
       <!--Authors-->
       <v-subheader>Authors</v-subheader>
       <v-list class="pa-0">
@@ -81,6 +92,20 @@ export default {
           name: 'remi0411',
           img: 'https://avatars0.githubusercontent.com/u/9786969?s=460&v=4',
           github: 'https://github.com/remi0411'
+        }
+      ],
+      graphs: [
+        {
+          name: 'Map pollution',
+          link: '/mappollution'
+        },
+        {
+          name: 'Map événements',
+          link: '/mapevents'
+        },
+        {
+          name: 'Period Manifestations',
+          link: '/period-manifestations'
         }
       ]
     }
