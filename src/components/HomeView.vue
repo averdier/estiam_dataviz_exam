@@ -64,6 +64,14 @@ export default {
             {
                 text: 'graph02',
                 href: '/graph02'
+            },
+            {
+                text: 'Map pollution',
+                href: '/mappollution'
+            },
+            {
+                text: 'Map événements',
+                href: '/mapevents'
             }
         ],
         libraries: [
