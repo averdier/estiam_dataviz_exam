@@ -29,12 +29,12 @@ export default {
     let options = {};
     
     var self = this;
-    axios.get('http://127.0.0.1:5500/qualiteair.json')
+    axios.get('https://data.opendatasoft.com/api/records/1.0/search/?dataset=qualite-de-lair-mesuree-dans-la-station-chatelet%40dataratp&rows=500&sort=-dateheure&facet=dateheure&apikey=ef7a96984f6c7516cb0f30e9d112e1714940989da255714be51c6d27')
       .then(function (response) {
         let totalc2cha4 = 0,totaltcha4 = 0,totalhycha4 = 0,total10cha4 = 0,totaln2cha4 = 0,totalnocha4 = 0,countc2cha4 = 0,counttcha4 = 0,counthycha4 = 0,count10cha4 = 0,countn2cha4 = 0,countnocha4 = 0;
         let tempDatas = [], data = [], axisDates = [], datasetNO = [], datasetNO2 = [], datasetPM10 = [], datasetC02 = [];
 
-        response.data.forEach(function (item) {
+        response.data.records.forEach(function (item) {
           let dateFormated = new Date(item.fields.dateheure).getHours();
           if (!tempDatas[dateFormated]) {
             tempDatas[dateFormated] = {};
