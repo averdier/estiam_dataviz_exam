@@ -13,7 +13,6 @@
     "chart.js": "^2.7.3",
     "google-maps-api-loader": "^1.1.1",
     "d3": "^5.7.0",
-    "google-maps-api-loader": "^1.1.1",
     "moment": "^2.23.0",
     "raw-loader": "^1.0.0",
     "vue": "^2.5.21",

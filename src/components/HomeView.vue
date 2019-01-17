@@ -58,10 +58,6 @@ export default {
     data: () => ({
         charts: [
             {
-                text: 'graph 01',
-                href: '/graph01'
-            },
-            {
                 text: 'graph02',
                 href: '/graph02'
             },
