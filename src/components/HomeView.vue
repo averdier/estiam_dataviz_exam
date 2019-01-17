@@ -58,8 +58,12 @@ export default {
     data: () => ({
         charts: [
             {
-                text: 'graph02',
+                text: 'Qualité air',
                 href: '/graph02'
+            },
+            {
+                text: 'Objets trouvés',
+                href: '/graph03'
             },
             {
                 text: 'Map pollution',

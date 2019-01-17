@@ -96,6 +96,18 @@ export default {
       ],
       graphs: [
         {
+          name: 'Qualité air',
+          link: '/graph02'
+        },
+        {
+          name: 'Objets trouvés',
+          link: '/graph03'
+        },
+        {
+          name: 'Objets informatiques perdus',
+          link: '/graph04'
+        },
+        {
           name: 'Map pollution',
           link: '/mappollution'
         },
