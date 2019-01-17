@@ -72,6 +72,10 @@ export default {
             {
                 text: 'Map événements',
                 href: '/mapevents'
+            },
+            {
+                text: 'Periode des manifestations',
+                href: '/period-manifestations'
             }
         ],
         libraries: [
