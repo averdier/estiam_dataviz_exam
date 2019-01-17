@@ -5,6 +5,7 @@ import Graph01 from './views/Graph01.vue'
 import Graph02 from './views/Graph02.vue'
 import MapPollution from './views/MapPollution.vue'
 import MapEvents from './views/MapEvents.vue'
+import PeriodManifestations from './views/PeriodManifestations.vue'
 
 Vue.use(Router)
 
@@ -34,6 +35,11 @@ export default new Router({
       path: '/mapevents',
       name: 'Map événements',
       component: MapEvents
+    },
+    {
+      path: '/period-manifestations',
+      name: 'PeriodManifestations',
+      component: PeriodManifestations
     }
   ]
 })
